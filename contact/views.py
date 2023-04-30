@@ -24,8 +24,8 @@ def index(request):
 
             print('the form was valid')
 
-            send_mail('The contact form subject','This is the message','MarqYourCalendar@outlook.com',['MarqYourCalendar@outlook.com'],html_message=html)
-            send_mail('A cool subject', 'A stunning message', settings.EMAIL_HOST_USER, ['MarqYourCalendar@outlook.com'],html_message=html)
+
+            send_mail('Email Testing', '', settings.EMAIL_HOST_USER, [email],html_message=html)
 
             return redirect('index')
     else:
