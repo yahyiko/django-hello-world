@@ -29,10 +29,14 @@ ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
 
 #Emailing
 
-EMAIL_HOST = 'sandbox.smtp.mailtrap.io'
-EMAIL_HOST_USER = 'eee4e2a014f38c'
-EMAIL_HOST_PASSWORD = 'dcc38c639626f9'
-EMAIL_PORT = '2525'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp-mail.outlook.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'MarqYourCalendar@outlook.com'
+EMAIL_HOST_PASSWORD = 'olpohaqgdmhvvrds'
+
+#EMAIL_PORT = '2525'
 
 
 # Application definition
